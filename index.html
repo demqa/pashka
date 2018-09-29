@@ -17,7 +17,7 @@
 		var block = document.querySelector(".block");
 		block.style.transition="1s"
 		var colors = ["red", "pink", "orange", "blue", "cyan", "black"]
-		block.onmouseenter = function(){
+		block.onclick = function(){
 			block.style.background=colors[Math.round(Math.random()*5)];
 		}
 	</script>
