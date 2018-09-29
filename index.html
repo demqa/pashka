@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.block{
+			width: 200px;
+			height: 200px;
+			background: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="block"></div>
+	<script>
+		var block = document.querySelector(".block");
+		block.style.transition="1s"
+		var colors = ["red", "pink", "orange", "blue", "cyan", "black"]
+		block.onmouseenter = function(){
+			block.style.background=colors[Math.round(Math.random()*5)];
+		}
+	</script>
+</body>
+</html>
