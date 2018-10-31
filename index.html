@@ -15,10 +15,10 @@
 	<div class="block"></div>
 	<script>
 		var block = document.querySelector(".block");
-		block.style.transition="3s"
-		var colors = ["pink", "orange", "cyan", "#DC143C", "#40E0D0", "58С878"]
+		block.style.transition="1.5s"
+		var colors = ["white","pink", "orange", "cyan", "#DC143C", "#40E0D0", "58С878","AF6DFF","black"]
 		block.onclick = function(){
-			block.style.background=colors[Math.round(Math.random()*5)];
+			block.style.background=colors[Math.round(Math.random()*colors.length-1)];
 		}
 	</script>
 </body>
